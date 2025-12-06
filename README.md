@@ -46,8 +46,8 @@ The sample CSVs are minimal placeholders: fill with real values or link to VHR i
 
 ## Project structure
 
-data/   sample CSV samples
-notebooks/  five ML note templates
-src/   helper modules (utils, preprocessing, model functions)
-requirements.txt
-README.md
+-data/   sample CSV samples
+-notebooks/  five ML note templates
+-src/   helper modules (utils, preprocessing, model functions)
+-requirements.txt
+-README.md
