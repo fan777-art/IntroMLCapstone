@@ -1,0 +1,4 @@
+flow_acc,slope,nlcd_class,pop_density,road_distance,parcel_value,bridge
+120.5,3.2,42,1500,350,125000,1
+45.0,7.8,21,200,1200,60000,0
+300.0,1.1,11,800,50,320000,1
