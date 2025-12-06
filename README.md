@@ -34,32 +34,6 @@ IntroMLCapstone is a small capstone project scaffold for comparing three classic
 
 4. Replace placeholder CSVs in `data/` with real datasets or extend preprocessing and data-loading pipelines in `src/utils.py`.
 
-## Project Structure Overview
-
-This repository contains all code, data, and documentation required to reproduce the experiments described in the capstone report. The project is organized using best practices for a machine learning pipeline, including modular code, clean notebook organization, and reproducible environment configuration.
-
-IntroMLCapstone/
-├── data/
-│   ├── bridges_train.csv
-│   ├── bridges_test.csv
-│   └── features_sample.csv
-│
-├── notebooks/
-│   ├── 01_linear_regression.ipynb
-│   ├── 02_random_forest.ipynb
-│   ├── 03_polynomial_regression.ipynb
-│   ├── 04_bridge_detection_cnn.ipynb
-│   └── 05_disaster_damage_pipeline.ipynb
-│
-├── src/
-│   ├── utils.py
-│   ├── preprocessing.py
-│   └── model_helpers.py
-│
-├── requirements.txt
-├── README.md
-└── LICENSE (optional)
-
 ## Folder/ File Descriptions
 
 ## data folder
