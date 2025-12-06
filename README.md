@@ -1,3 +1,10 @@
+Project: IntroMLCapstone
+Author: Qifan Zhao
+Date: December 2025
+
+Description:
+Machine learning capstone exploring bridge detection using geospatial features.
+
 # IntroMLCapstone
 
 IntroMLCapstone is a small capstone project scaffold for comparing three classical machine learning approaches (linear regression, polynomial regression, random forest) with two literature-inspired implementations for bridge detection and post-disaster infrastructure assessment using remote sensing. The objective is to use synthetic or sample tabular data for quick experimentation, then extend notebooks to work with VHR imagery and deep learning pipelines following the cited papers.
