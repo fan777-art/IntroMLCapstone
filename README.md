@@ -1,10 +1,3 @@
-Project: IntroMLCapstone
-Author: Qifan Zhao
-Date: December 2025
-
-Description:
-Machine learning capstone exploring bridge detection using geospatial features.
-
 # IntroMLCapstone
 
 IntroMLCapstone is a small capstone project scaffold for comparing three classical machine learning approaches (linear regression, polynomial regression, random forest) with two literature-inspired implementations for bridge detection and post-disaster infrastructure assessment using remote sensing. The objective is to use synthetic or sample tabular data for quick experimentation, then extend notebooks to work with VHR imagery and deep learning pipelines following the cited papers.
@@ -34,83 +27,6 @@ IntroMLCapstone is a small capstone project scaffold for comparing three classic
 
 4. Replace placeholder CSVs in `data/` with real datasets or extend preprocessing and data-loading pipelines in `src/utils.py`.
 
-## Folder/ File Descriptions
-
-## data folder
-
-Contains training and testing datasets used in the project. These files include geospatially-derived features such as slope, flow accumulation, NLCD land-cover class, population density, and parcel attributes for bridge and non-bridge locations.
-
-bridges_train.csv — labeled training samples (feature vectors with target = 1)
-
-bridges_test.csv — evaluation samples (known private bridge points)
-
-features_sample.csv — synthetic dataset used for notebook development
-
-No raw imagery stored here due to size. Imagery inputs are referenced externally.
-
-## notebooks folder
-
-Each notebook corresponds to a single model experiment, satisfying the course requirement of five files (three classical ML, two from literature).
-
-01_linear_regression.ipynb — baseline regression model
-
-02_random_forest.ipynb — ensemble model with feature importance output
-
-03_polynomial_regression.ipynb — nonlinear regression benchmark
-
-04_bridge_detection_cnn.ipynb — implementation inspired by the “Learning to holistically detect bridges from large-size VHR imagery” paper
-
-05_disaster_damage_pipeline.ipynb — simplified reproduction of “Rapid post-disaster infrastructure damage characterization" workflow
-
-Each notebook loads data, preprocesses features, trains the model, evaluates performance (MSE/MAE), and produces visualizations.
-
-## src folder
-
-Standalone Python modules that support preprocessing, feature engineering, and modeling. These scripts ensure reusability and cleaner notebook code.
-
-utils.py — helper functions to load CSVs, split data, and evaluate metrics
-
-preprocessing.py — functions for normalization, encoding, and feature scaling
-
-model_helpers.py — wrappers around scikit-learn training loops and grid search
-
-Importable in notebooks using:
-from src.utils import load_data
-
-## requirements.txt
-
-Lists all Python dependencies required to run the project, including:
-
-numpy
-
-pandas
-
-scikit-learn
-
-matplotlib
-
-seaborn
-
-Install using:
-pip install -r requirements.txt
-
-## README.md
-
-You are reading it. Contains:
-
-Project summary
-
-Data sources
-
-File/folder descriptions (this section!)
-
-Instructions for running notebooks
-
-Brief Description of Dataset Features
-
-Paper citations placeholder
-
-
 ## Dataset features (short description)
 
 The tabular placeholders use a small set of engineered features intended for quick prototyping:
@@ -131,5 +47,13 @@ The sample CSVs are minimal placeholders: fill with real values or link to VHR i
 - Rapid Post-Disaster Infrastructure Damage Characterisation Using Remote Sensing and Deep Learning Technologies (2023). [citation placeholder]
 
 Please replace the placeholders above with full bibliographic entries (BibTeX or DOI) when you integrate the actual implementations.
+
+## Project structure
+
+- data/ — placeholder CSV files for train/test/sample.
+- notebooks/ — minimal Jupyter notebook templates for experiments and literature reproductions.
+- src/ — helper utilities (e.g., src/utils.py).
+- requirements.txt — Python dependencies.
+- README.md — this file.
 
 Happy experimenting! Pull requests and notebook improvements are welcome.
