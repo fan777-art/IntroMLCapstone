@@ -1,6 +1,6 @@
 # IntroMLCapstone
 
-IntroMLCapstone is a small capstone project scaffold for comparing three classical machine learning approaches (linear regression, polynomial regression, random forest) with two literature-inspired implementations for bridge detection and post-disaster infrastructure assessment using remote sensing. The objective is to use synthetic or sample tabular data for quick experimentation, then extend notebooks to work with VHR imagery and deep learning pipelines following the cited papers.
+IntroMLCapstone is a small capstone project scaffold for comparing three classical machine learning approaches (linear regression, polynomial regression, random forest) with two literature-inspired implementations for bridge detection and post-disaster infrastructure assessment using remote sensing. The objective is to prototype with structured tabular data before extending the workflow to very-high-resolution (VHR) imagery and deep-learning pipelines based on published research.
 
 ## Running the notebooks
 
@@ -25,8 +25,6 @@ IntroMLCapstone is a small capstone project scaffold for comparing three classic
    - 04_vhr_holistic_detection.ipynb
    - 05_tiered_disaster_detection.ipynb
 
-4. Replace placeholder CSVs in `data/` with real datasets or extend preprocessing and data-loading pipelines in `src/utils.py`.
-
 ## Dataset features (short description)
 
 The tabular placeholders use a small set of engineered features intended for quick prototyping:
@@ -41,19 +39,15 @@ The tabular placeholders use a small set of engineered features intended for qui
 
 The sample CSVs are minimal placeholders: fill with real values or link to VHR image pipelines for the literature-based notebooks.
 
-## Papers / citations (placeholders)
+## Papers 
 
-- Learning to Holistically Detect Bridges from Large-Size VHR Remote Sensing Imagery (2022). [citation placeholder]
-- Rapid Post-Disaster Infrastructure Damage Characterisation Using Remote Sensing and Deep Learning Technologies (2023). [citation placeholder]
-
-Please replace the placeholders above with full bibliographic entries (BibTeX or DOI) when you integrate the actual implementations.
+- Learning to Holistically Detect Bridges from Large-Size VHR Remote Sensing Imagery (2022). 
+- Rapid Post-Disaster Infrastructure Damage Characterisation Using Remote Sensing and Deep Learning Technologies (2023).
 
 ## Project structure
 
-- data/ — placeholder CSV files for train/test/sample.
-- notebooks/ — minimal Jupyter notebook templates for experiments and literature reproductions.
-- src/ — helper utilities (e.g., src/utils.py).
-- requirements.txt — Python dependencies.
-- README.md — this file.
-
-Happy experimenting! Pull requests and notebook improvements are welcome.
+data/         # sample CSV datasets
+notebooks/    # five ML notebook templates
+src/          # helper modules (utils, preprocessing, model functions)
+requirements.txt
+README.md
